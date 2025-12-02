@@ -1,0 +1,1 @@
+\\wsl.localhost\Ubuntu-20.04\root\ros2_ws\src\my_pkg\my_pkg\points_to_pc2.py
