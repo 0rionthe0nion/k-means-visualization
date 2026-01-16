@@ -22,7 +22,7 @@ class PointsToPC2(Node):
     def create_pc2(self, points):
         msg = PointCloud2()
         msg.header.stamp = self.get_clock().now().to_msg()
-        msg.header.frame_id = 'map'
+        msg.header.frame_id = 'livox_frame'
         msg.height = 1
         msg.width = points.shape[0]
 
