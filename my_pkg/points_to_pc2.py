@@ -8,8 +8,8 @@ import numpy as np
 class PointsToPC2(Node):
     def __init__(self):
         super().__init__('points_to_pc2')
-        self.sub = self.create_subscription(Float32MultiArray, 'clustered_cloud', self.callback, 10)
-        self.pub = self.create_publisher(PointCloud2, 'point_cloud', 10)
+        self.sub = self.create_subscription(Float32MultiArray, 'clustered_cloud', self.callback, 100)
+        self.pub = self.create_publisher(PointCloud2, 'point_cloud', 100)
 
     def callback(self, msg):
         points = np.array(msg.data).reshape(-1, 4)
